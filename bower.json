@@ -1,0 +1,22 @@
+{
+    "name": "js-tools",
+    "version": "0.1",
+    "authors": [
+        "Nuxia <contact@nuxia.fr>"
+    ],
+    "description": "Js & jQuery tools",
+    "license": "MIT",
+    "ignore": [
+        "**/.*",
+        "src",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests",
+        "gulpfile.js",
+        "package.json"
+    ],
+    "dependencies": {
+        "jquery": "~1.11"
+    }
+}
