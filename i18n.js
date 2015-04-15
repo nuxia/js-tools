@@ -1,0 +1,1 @@
+var i18n_locale = $('html').attr('lang');
