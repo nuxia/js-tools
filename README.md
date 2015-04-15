@@ -1,3 +1,4 @@
 # TODO 
 
-bower
+bower gulp + structure
+tag
