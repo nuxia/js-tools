@@ -4,6 +4,7 @@
     "authors": [
         "Yannick Snobbert <yannicksnobbert@gmail.com>"
     ],
+    "main":[],
     "description": "Js & jQuery tools",
     "license": "MIT",
     "ignore": [
