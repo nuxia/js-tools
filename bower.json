@@ -1,23 +1,24 @@
 {
-    "name": "js-tools",
-    "version": "0.1",
-    "authors": [
-        "Yannick Snobbert <yannicksnobbert@gmail.com>"
-    ],
-    "main":[],
-    "description": "Js & jQuery tools",
-    "license": "MIT",
-    "ignore": [
-        "**/.*",
-        "src",
-        "node_modules",
-        "bower_components",
-        "test",
-        "tests",
-        "gulpfile.js",
-        "package.json"
-    ],
-    "dependencies": {
-        "jquery": ">=1.9.0"
-    }
+  "name": "js-tools",
+  "version": "0.1",
+  "authors": [
+    "Yannick Snobbert <yannicksnobbert@gmail.com>"
+  ],
+  "main": [],
+  "description": "Js & jQuery tools",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "src",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "gulpfile.js",
+    "package.json"
+  ],
+  "dependencies": {
+    "jquery": ">=1.9.0",
+    "js-tools": "nuxia/js-tools"
+  }
 }

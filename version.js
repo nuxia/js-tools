@@ -1,1 +1,1 @@
-var version = $('meta[property="nx-version"]').attr('content');
+var version = $('meta[property="nx:version"]').attr('content');
