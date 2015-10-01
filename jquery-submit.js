@@ -1,3 +1,3 @@
-$('form').on('submit', function() {
-    $(this).find('input[type=submit], button').attr('disabled', 'disabled');
+$('body').on('click', '[type="submit"]', function() {
+    $(this).attr('disabled', 'disabled');
 });
