@@ -1,5 +1,9 @@
 $('form').on('submit', function() {
-    lockButton($(this).find('input[type=submit], button'));
+    var method = $(this).attr('method') || '';
+    
+    if (method.toLowerCase() !== 'get') {
+        lockButton($(this).find('input[type=submit], button'));
+    }
 });
 
 function lockButton($button) {
