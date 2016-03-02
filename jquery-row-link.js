@@ -1,23 +1,18 @@
 $(document).ready(function () {
-    if ($('table a.row-link').exist()) {
-        $('table tbody td:not(.actions)').each(function () {
-            var $this = $(this),
-                $link = $this.parent('tr').find('a.row-link');
-    
-            if ($link.exist()) {
-                $this.addClass('pointer');
-                $this.on('click', function (e) {
-                    if ($link.attr('target') === '_blank') {
-                        window.open($link.attr('href'));
-                    } else {
-                        window.location = $link.attr('href');
-                    }
-                });
+    $('.row-link').each(function() {
+        var $link = $(this),
+            $row = $link.closest('tr');
+
+        $row.find('td').not('.actions').addClass('pointer');
+
+        $row.on('click', function(event) {
+            var $target = $(event.target);
+
+            if ($target.closest('td.actions').length > 0 || $target.hasClass('row-link')) {
+                return;
             }
+
+            $link[0].click();
         });
-    
-        $('table tbody tr a').click(function (e) {
-            e.stopPropagation();
-        });
-    }
+    });
 });
