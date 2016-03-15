@@ -1,6 +1,6 @@
-$('form').on('submit', function() {
+$('form').not('[data-not-lockable]').on('submit', function() {
     var method = $(this).attr('method') || '';
-    
+
     if (method.toLowerCase() !== 'get') {
         lockButton($(this).find('input[type=submit], button'));
     }
@@ -8,4 +8,8 @@ $('form').on('submit', function() {
 
 function lockButton($button) {
     $button.attr('disabled', 'disabled');
+}
+
+function unlockButton($button) {
+    $button.removeAttr('disabled');
 }
